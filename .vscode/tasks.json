@@ -1,0 +1,20 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "npm",
+            "isBackground": true,
+            "script": "debug",
+            "problemMatcher": {
+                "base": "$tsc-watch",
+                "background": {
+                  "activeOnStart": true,
+                  "beginsPattern": "Starting the development server",
+                  "endsPattern": "You can now view my-app in the browser"
+                }
+              }            
+        }
+    ]
+}
